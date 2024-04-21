@@ -9,11 +9,27 @@ project "assimp"
 
 	files
 	{
+		"include/**.h",
+		"include/**.hpp",
+		"include/**.inl",
 		"code/**.h",
 		"code/**.cpp",
 		"code/**.hpp",
 		"code/**.c",
-		"code/**.inl"
+		"code/**.inl",
+
+		"contrib/**.h",
+		"contrib/**.cpp",
+		"contrib/**.hpp",
+		"contrib/**.c",
+		"contrib/**.inl",
+	}
+
+	includedirs
+	{
+		"include",
+		"code",
+		"contrib/**"
 	}
 
 	filter "system:windows"
