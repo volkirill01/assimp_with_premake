@@ -4,6 +4,9 @@ project "assimp"
 	cppdialect "C++17"
 	staticruntime "off"
 
+	warnings "Off"
+	linkoptions { "/ignore:4006" }
+
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
