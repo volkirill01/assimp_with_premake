@@ -7,8 +7,8 @@ project "assimp"
 	warnings "Off"
 	linkoptions { "/ignore:4006" }
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("%{wks.location}/bin/%{outputdir}/%{prj.name}")
+	objdir ("%{wks.location}/bin-int/%{outputdir}/%{prj.name}")
 
 	defines {
 	 	"_CRT_SECURE_NO_WARNINGS",
